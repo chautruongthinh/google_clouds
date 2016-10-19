@@ -17,4 +17,8 @@ git clone https://github.com/chautruongthinh/local_manifests.git -b cm-14.0
 cd ..
 repo sync -j32
 
-
+# use ccache
+export USE_CCACHE=1
+export CCACHE_DIR=~/.ccache
+~/cm-14.0/prebuilts/misc/linux-x86/ccache/ccache -M 50G
+wget https://raw.githubusercontent.com/chautruongthinh/google_clouds/master/.bashrc
