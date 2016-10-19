@@ -21,4 +21,6 @@ repo sync -j32
 export USE_CCACHE=1
 export CCACHE_DIR=~/.ccache
 ~/cm-14.0/prebuilts/misc/linux-x86/ccache/ccache -M 50G
+rm -rf ~/.bashrc
 wget https://raw.githubusercontent.com/chautruongthinh/google_clouds/master/.bashrc
+
