@@ -15,9 +15,7 @@ mkdir cm-14.0 && cd cm-14.0
 git config --global user.name "Chau Truong Thinh"
 git config --global user.email "chautruongthinh@gmail.com"
 repo init -u git://github.com/CyanogenMod/android.git -b cm-14.0
-cd .repo
-git clone https://github.com/chautruongthinh/local_manifests.git -b cm-14.0
-cd ..
+git clone https://github.com/chautruongthinh/local_manifests.git -b cm-14.0 .repo/local_manifests
 repo sync -j32
 cd ~
 
@@ -25,8 +23,7 @@ cd ~
 export USE_CCACHE=1
 export CCACHE_DIR=~/.ccache
 ~/cm-14.0/prebuilts/misc/linux-x86/ccache/ccache -M 50G
-rm -rf ~/.bashrc
-wget https://raw.githubusercontent.com/chautruongthinh/google_clouds/master/.bashrc
+echo -e "export USE_CCACHE=1 \nexport CCACHE_DIR=~/.ccache" >> .bashrc
 
 # Google Drive
 wget https://docs.google.com/uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE&export=download
