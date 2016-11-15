@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt-get install xfce4 xfce4-goodies tightvncserver
+sudo apt-get install xfce4 xfce4-goodies tightvncserver -y
 vncserver
 vncserver -kill :1
 mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
@@ -19,6 +19,6 @@ rm -rf elementary-xfce.tar.gz
 #Chrome web browser
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-sudo apt-get update && sudo apt-get install google-chrome-stable
+sudo apt-get update && sudo apt-get install google-chrome-stable -y
 
 

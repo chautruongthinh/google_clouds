@@ -11,11 +11,11 @@ sudo apt-get install phablet-tools git-core gnupg flex bison gperf build-essenti
 sudo rm -rf ~/openjdk-8-jre-headless_8u45-b14-1_amd64.deb
 sudo rm -rf ~/openjdk-8-jre_8u45-b14-1_amd64.deb
 sudo rm -rf ~/openjdk-8-jdk_8u45-b14-1_amd64.deb
-mkdir cm-14.0 && cd cm-14.0
+mkdir cm-14.1 && cd cm-14.1
 git config --global user.name "Chau Truong Thinh"
 git config --global user.email "chautruongthinh@gmail.com"
-repo init -u git://github.com/CyanogenMod/android.git -b cm-14.0
-git clone https://github.com/chautruongthinh/local_manifests.git -b cm-14.0 .repo/local_manifests
+repo init -u git://github.com/CyanogenMod/android.git -b cm-14.1
+git clone https://github.com/chautruongthinh/local_manifests.git -b cm-14.1 .repo/local_manifests
 repo sync -j32
 cd ~
 
