@@ -17,8 +17,7 @@ export CCACHE_DIR=~/.ccache
 echo -e "export USE_CCACHE=1 \nexport CCACHE_DIR=~/.ccache" >> .bashrc
 
 # Google Drive
-wget https://docs.google.com/uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE&export=download
-mv uc\?id\=0B3X9GlR6EmbnWksyTEtCM0VfaFE gdrive
+curl -O https://raw.githubusercontent.com/chautruongthinh/google_clouds/ubuntu_14.0.4/gdrive
 chmod +x gdrive
 sudo install gdrive /usr/local/bin/gdrive
 rm -rf gdrive
