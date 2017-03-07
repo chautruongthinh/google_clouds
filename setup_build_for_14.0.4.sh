@@ -22,7 +22,7 @@ cd ~
 # use ccache
 export USE_CCACHE=1
 export CCACHE_DIR=~/.ccache
-~/cm-14.0/prebuilts/misc/linux-x86/ccache/ccache -M 50G
+~/cm-14.1/prebuilts/misc/linux-x86/ccache/ccache -M 50G
 echo -e "export USE_CCACHE=1 \nexport CCACHE_DIR=~/.ccache" >> .bashrc
 
 # Google Drive
