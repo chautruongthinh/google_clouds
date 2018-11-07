@@ -125,7 +125,7 @@ elif [ "$branchlos" == "2" ];then
 elif [ "$branchlos" == "3" ];then
 	mkdir -p lineage-16.0
 	cd lineage-16.0
-	repo init -u git://github.com/LineageOS/android.git -b linegae-16.0
+	repo init -u git://github.com/LineageOS/android.git -b lineage-16.0
 fi
 
 #RR
